@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Hostname</th>
+    </tr>
+    <tr>
+        <% for shop in @shops %>
+            <td><%= shop.name %></td>
+            <td><%= shop.hostname %></td>
+        <% end %>
+    </tr>
+</table>
