@@ -6,7 +6,7 @@
     <tr>
         <% for shop in @shops %>
             <td><%= shop.name %></td>
-            <td><%= shop.hostname %></td>
+            <td><%= link_to shop.hostname, "http://#{shop.hostname}/" %></td>
         <% end %>
     </tr>
 </table>
