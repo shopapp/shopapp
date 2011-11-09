@@ -1,4 +1,8 @@
 Shopapp::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :users, ActiveAdmin::Devise.config
+
   resources :shops
 
   # The priority is based upon order of creation:

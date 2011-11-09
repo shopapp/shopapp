@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Shopapp</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <head>
+        <title>Shopapp</title>
+        <%= stylesheet_link_tag    "application" %>
+        <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content_wrapper">
+                <p class="notice"><%= notice %></p>
+                <p class="alert"><%= alert %></p>
 
-<%= yield %>
-
-</body>
+                <%= yield %>
+            </div>
+        </div>
+    </body>
 </html>
