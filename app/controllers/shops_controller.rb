@@ -1,6 +1,4 @@
 class ShopsController < ApplicationController
-  before_filter :login_required, :except => 'show'
-
   def index
     @shops = Shop.all
   end

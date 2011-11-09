@@ -1,12 +1,7 @@
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Hostname</th>
-    </tr>
-    <tr>
-        <% for shop in @shops %>
-            <td><%= shop.name %></td>
-            <td><%= link_to shop.hostname, "http://#{shop.hostname}/" %></td>
-        <% end %>
-    </tr>
-</table>
+<%= link_to "Admin", '/admin' %>
+
+<ul>
+<% for shop in @shops %>
+    <li><%= link_to shop.name, "http://#{shop.hostname}/" %></li>
+<% end %>
+</ul>
