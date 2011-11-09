@@ -1,7 +1,0 @@
-<%= link_to "Admin", admin_dashboard_path %>
-
-<ul>
-<% for shop in @shops %>
-    <li><%= link_to shop.name, "http://#{shop.hostname}/" %></li>
-<% end %>
-</ul>
