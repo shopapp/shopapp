@@ -10,7 +10,7 @@ ActiveAdmin.setup do |config|
   # Set the link url for the title. For example, to take 
   # users to your main site. Defaults to no link.
   #
-  # config.site_title_link = "/"
+  config.site_title_link = "/"
 
   # == Default Namespace
   #
@@ -39,7 +39,6 @@ ActiveAdmin.setup do |config|
   # within the controller.
   config.authentication_method = :authenticate_user!
 
-
   # == Current User
   #
   # Active Admin will associate actions with the current
@@ -48,7 +47,6 @@ ActiveAdmin.setup do |config|
   # This setting changes the method which Active Admin calls
   # to return the currently logged in user.
   config.current_user_method = :current_user
-
 
   # == Logging Out
   #
